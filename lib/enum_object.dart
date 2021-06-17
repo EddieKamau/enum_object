@@ -3,7 +3,7 @@
 /// 
 library enum_object;
 
-class EnumObject{
+class EnumObject<T>{
   EnumObject(this.enumValues);
   final List enumValues;
   
@@ -13,8 +13,8 @@ class EnumObject{
   
   /// This converts a [String] value [v] to [enum] value, 
   /// returns [null] when no enum value matches the string
-  Object? enumFromString(String? v){
-   Object? _enumItem;
+  T? enumFromString(String? v){
+   T? _enumItem;
     for(var i=0; i<enumValues.length; i++){
       final item = enumValues[i];
       if(value(item) == v){

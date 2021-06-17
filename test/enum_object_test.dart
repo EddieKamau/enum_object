@@ -12,12 +12,12 @@ void main() {
     });
 
     test('Tests if it converts String to enum', () {
-      var enumObject = EnumObject(TestEnum.values);
+      var enumObject = EnumObject<TestEnum>(TestEnum.values);
       expect(enumObject.enumFromString('test2'), TestEnum.test2);
     });
 
     test('Tests if it converts invalid String to enum (null)', () {
-      var enumObject = EnumObject(TestEnum.values);
+      var enumObject = EnumObject<TestEnum>(TestEnum.values);
       expect(enumObject.enumFromString('invalid'), null);
     });
     

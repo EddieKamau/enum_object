@@ -5,7 +5,7 @@ void main() {
   print(TestEnum.test.enumValue);
 
   // convert String to enum value
-  var enumObject = EnumObject(TestEnum.values);
+  var enumObject = EnumObject<TestEnum>(TestEnum.values);
   print(enumObject.enumFromString('test2'));
 
 
