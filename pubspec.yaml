@@ -1,7 +1,7 @@
-name: enum_class
+name: enum_object
 description: Converts enum value to String and vice versa
 version: 0.0.1
-homepage: https://github.com/EddieKamau/enum_class
+homepage: https://github.com/EddieKamau/enum_object
 
 environment:
   sdk: '>=2.12.0 <3.0.0'

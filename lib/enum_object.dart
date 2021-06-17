@@ -1,10 +1,10 @@
 /// Converts an enum value to String and vice versa
 ///
 /// 
-library enum_class;
+library enum_object;
 
-class EnumClass{
-  EnumClass(this.enumValues);
+class EnumObject{
+  EnumObject(this.enumValues);
   final List enumValues;
   
   String? value(Object _v){

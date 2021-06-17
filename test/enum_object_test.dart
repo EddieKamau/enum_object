@@ -1,4 +1,4 @@
-import 'package:enum_class/enum_class.dart';
+import 'package:enum_object/enum_object.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -12,13 +12,13 @@ void main() {
     });
 
     test('Tests if it converts String to enum', () {
-      var enumClass = EnumClass(TestEnum.values);
-      expect(enumClass.enumFromString('test2'), TestEnum.test2);
+      var enumObject = EnumObject(TestEnum.values);
+      expect(enumObject.enumFromString('test2'), TestEnum.test2);
     });
 
     test('Tests if it converts invalid String to enum (null)', () {
-      var enumClass = EnumClass(TestEnum.values);
-      expect(enumClass.enumFromString('invalid'), null);
+      var enumObject = EnumObject(TestEnum.values);
+      expect(enumObject.enumFromString('invalid'), null);
     });
     
   });
